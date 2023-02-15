@@ -25,9 +25,9 @@ public class Main {
             String operation = arr[1];
 
             if (NumberHelper.isArabic(a)) {
-                calculator.setOperations(new ArabicNumeralSystem());
+                calculator.setNotation(new ArabicNumeralSystem());
             } else if (NumberHelper.isRoman(a)) {
-                calculator.setOperations(new RomanNumeralSystem());
+                calculator.setNotation(new RomanNumeralSystem());
             }
 
             switch (operation) {
